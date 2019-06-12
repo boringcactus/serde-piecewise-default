@@ -1,0 +1,22 @@
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+filter_secrets: false
+os:
+  - linux
+  - osx
+  - windows
+before_install:
+  - rustup component add clippy
+script:
+  - cargo test
+  - cargo clippy
+  - pushd serde_piecewise_default_derive
+  - cargo test
+  - cargo clippy
+  - popd
+matrix:
+  allow_failures:
+    - rust: nightly

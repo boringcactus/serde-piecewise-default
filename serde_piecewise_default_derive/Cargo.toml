@@ -1,5 +1,5 @@
 [package]
-name = "serde_piecewise_default"
+name = "serde_piecewise_default_derive"
 version = "0.1.0"
 authors = ["Melody Horn <melody@boringcactus.com>"]
 edition = "2018"
@@ -7,8 +7,6 @@ edition = "2018"
 description = "Uses serde's Option<T> handling to let you easily specify defaults for all fields at once by implementing Default."
 documentation = "https://docs.rs/serde-piecewise-default/"
 repository = "https://github.com/boringcactus/serde-piecewise-default"
-
-readme = "README.md"
 
 keywords = ["serde", "serialization", "derive"]
 categories = ["encoding"]
@@ -19,10 +17,11 @@ license = "MIT"
 travis-ci = { repository = "boringcactus/serde-piecewise-default", branch = "master" }
 maintenance = { status = "passively-maintained" }
 
-[dependencies]
-serde = "1.0"
-serde_piecewise_default_derive = { path = "./serde_piecewise_default_derive", version = "0.1.0" }
+[lib]
+proc-macro = true
 
-[dev-dependencies]
-serde_json = "1.0"
-compiletest_rs = { version = "*", features = [ "stable" ] }
+[dependencies]
+syn = { version = "0.15.35", features = ["extra-traits"] }
+quote = "0.6.12"
+proc-macro2 = "0.4.30"
+serde = { version = "1.0", features = ["derive"] }
