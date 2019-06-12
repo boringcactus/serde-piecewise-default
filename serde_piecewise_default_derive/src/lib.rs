@@ -1,4 +1,4 @@
-//! See the [crate-level documentation](../serde_piecewise_default/) for more information.
+//! See the [parent crate documentation](https://docs.rs/serde_piecewise_default/) for more information.
 #![recursion_limit="512"]
 
 extern crate proc_macro;
@@ -14,7 +14,7 @@ use syn::*;
 use syn::spanned::Spanned;
 use proc_macro2::Span;
 
-/// See the [crate-level documentation](../serde_piecewise_default/) for a high-level overview.
+/// See the [parent crate documentation](https://docs.rs/serde_piecewise_default/) for a high-level overview.
 ///
 /// # Implementation Details
 ///

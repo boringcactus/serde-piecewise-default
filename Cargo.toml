@@ -1,11 +1,11 @@
 [package]
 name = "serde_piecewise_default"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Melody Horn <melody@boringcactus.com>"]
 edition = "2018"
 
 description = "Uses serde's Option<T> handling to let you easily specify defaults for all fields at once by implementing Default."
-documentation = "https://docs.rs/serde-piecewise-default/"
+documentation = "https://docs.rs/serde_piecewise_default/"
 repository = "https://github.com/boringcactus/serde-piecewise-default"
 
 readme = "README.md"
@@ -21,7 +21,7 @@ maintenance = { status = "passively-maintained" }
 
 [dependencies]
 serde = "1.0"
-serde_piecewise_default_derive = { path = "./serde_piecewise_default_derive", version = "0.1.0" }
+serde_piecewise_default_derive = { path = "./serde_piecewise_default_derive", version = "0.2.0" }
 
 [dev-dependencies]
 serde_json = "1.0"

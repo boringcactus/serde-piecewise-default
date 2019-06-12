@@ -1,5 +1,7 @@
 # serde-piecewise-default
-![Travis Build Status](https://img.shields.io/travis/com/boringcactus/serde-piecewise-default.svg) ![Crates.io](https://img.shields.io/crates/v/serde-piecewise-default.svg) ![docs.rs](https://docs.rs/serde-piecewise-default/badge.svg)
+[![Travis Build Status](https://img.shields.io/travis/com/boringcactus/serde-piecewise-default.svg)](https://travis-ci.com/boringcactus/serde-piecewise-default)
+[![Crates.io](https://img.shields.io/crates/v/serde-piecewise-default.svg)](https://crates.io/crates/serde-piecewise-default)
+[![docs.rs](https://docs.rs/serde_piecewise_default/badge.svg)](https://docs.rs/serde_piecewise_default/)
 
 Uses serde's `Option<T>` handling to let you easily specify defaults for all fields at once
 by implementing `Default`.
