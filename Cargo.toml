@@ -25,4 +25,4 @@ serde_piecewise_default_derive = { path = "./serde_piecewise_default_derive", ve
 
 [dev-dependencies]
 serde_json = "1.0"
-compiletest_rs = { version = "*", features = [ "stable" ] }
+compiletest_rs = { version = "0.3.22", features = [ "stable" ] }
